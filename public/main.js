@@ -26,10 +26,8 @@ fetch("https://votingapp123.herokuapp.com/poll")
         document.querySelector('#chartTitle').textContent = `Total Votes: ${totalVotes}`;
 
         let voteCounts = {
-            Windows: 0,
-            MacOS: 0,
-            Linux: 0,
-            Other: 0
+            Yes:0,
+            No:0
         };
 
         voteCounts = votes.reduce((acc, vote) => (
@@ -38,10 +36,9 @@ fetch("https://votingapp123.herokuapp.com/poll")
         );
 
         let dataPoints = [
-            { label: 'Windows', y: voteCounts.Windows },
-            { label: 'MacOS', y: voteCounts.MacOS },
-            { label: 'Linux', y: voteCounts.Linux },
-            { label: 'Other', y: voteCounts.Other }
+            { label: 'Yes', y: voteCounts.Yes },
+            { label: 'No', y: voteCounts.No },
+            
         ];
             
         const chartContainer = document.querySelector('#chartContainer');
