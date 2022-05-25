@@ -1,4 +1,3 @@
-# PusherPoll
 
 > Real-Time polling application using Pusher API, Node.js, Express, MongoDB  and CanvasJS
 
@@ -16,3 +15,4 @@ npm run dev
 # Start
 npm start
 ```
+cre: boycudon123
